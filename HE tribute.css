@@ -1,5 +1,33 @@
-#title-text {Font-Family: 'Ovo', Serif;
+
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+}
+
+.title-text {Font-Family: 'Ovo', Serif;
 Font-Size: 42px;}
 
-#body-text {Font-Family: 'Quattrocento Sans', Sans-Serif;
+.body-text {Font-Family: 'Quattrocento Sans', Sans-Serif;
 Font-Size: 17px;}
+
+.menu-text {font-family: 'ovo', Serif;
+font-size: 17px;}
+
+.menu-container {
+    color: #fff;
+    background-color: #3E0E07;
+    padding: 20px 0;
+    border-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.menu {
+display: flex;
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 1;
+flex
+}
