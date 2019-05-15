@@ -1,56 +1,98 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans" rel="stylesheet">
-        <link href="HE tribute.css" rel="stylesheet" type="text/css">
-        <title>Honest Ed's</title>
-    </head>
-    <body>
 
-        <div class="menu-container">
-            <div class="menu">
-                <div class="To-Top menu-text">To Top</div>
-                <div class="History menu-text">History</div>
-                <div class="Culture-Impact menu-text">Cultural Impact</div>
-                <div class="the-sign menu-text">The Sign</div>
-                <div class="learn-more menu-text">Learn More</div>
-            </div>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans|Ewert" rel="stylesheet">
+    <link href="HE tribute.css" rel="stylesheet" type="text/css">
+
+    <title>Honest Ed's Tribute Page</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
 
 
-        <img id="title-image" src="images/honest_ed_s.jpg" alt:"Front marquee of the honest eds department store">
-        <h1> Honest Ed's</h1>
+    <div class="menu-container">
+        <div class="show-menu">Show Menu</div>
+        <div class="hide-menu">Hide Menu</div>
+        <div class="To-Top menu-text"><a href="#title-image">To Top</a></div>
+        <div class="History menu-text"><a href="#history-image">History</a></div>
+        <div class="Culture-Impact menu-text"><a href="#culture-image">Cultural Impact</a></div>
+        <div class="the-sign menu-text"><a href="#sign-image">The Sign</a></div>
+        <div class="learn-more menu-text"><a href="https://en.wikipedia.org/wiki/Honest_Ed%27s" target="_blank">Learn More</a></div>
+    </div>
 
-        <h2 class="title-text">There's no Business like <s>Show</s> Shoe Business!</h2>
+    <div class="title-image-text">
+        <img id="title-image" src="images/honest_ed_s.png" alt="Front marquee of the honest eds department store">
+        <div class="down-arrow title-text">&darr;</div>
+    </div>
 
-        <img id="history-image" src="images/ed_mirvish_at_the_royalalexandra.jpeg" alt:"Ed Mirvish in front of the Royal Alexanda theatre">
+    <h1 class="main-title"> Honest Ed's</h1>
+
+    <h2 class="sub-title title-text">There's no Business like <s>Show</s> Shoe Business!</h2>
+
+    <div class="history-section">
+        <img id="history-image" src="images/ed_mirvish_at_the_royalalexandra.jpeg" alt="Ed Mirvish in front of the Royal Alexanda theatre">
         <h3 class="title-text">History </h3>
-            <h4 class="body-text">Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+        <h4 class="body-text">Honest Ed's was a landmark discount store located in Toronto, Ontario, Canada. It was named for its proprietor, Ed Mirvish,
+                who opened the store in 1948 and oversaw its operations for almost 60 years, until his death in 2007. The store continued in operation until it was
+                permanently closed on December 31, 2016.
 
-        <img id="culture-image" src="images/Scott-pilgrim.jpg" alt:"comic page from Scott Pilgrim involving Honest Eds">
+                Ed and Anne Mirvish opened "The Sport's Bar", a women's clothing store, near Bloor and Bathurst Streets in 1943 renting a property that was five metres wide.
+                The store proved popular. In 1946, the Mirvishes expanded after acquiring several buildings along Bloor, renaming the store "Anne and Eddie's". After a further
+                expansion, Mirvish re-established the store as "Honest Ed's Bargain House" in 1948, adding general household goods to the inventory. In 1952, the Mirvishes
+                acquired their first property on Markham Street, behind the store and eventually acquired several more homes on the street with the intent of building a parking lot.
+                Instead, this eventually evolved into the Mirvish Village neighbourhood in the 1960s after the city turned down the store's application to raze the buildings and Anne
+                Mirvish persuaded her husband to rent the houses out to artists. In 1958, "Honest Ed's" expanded west to Markham Street to encompass 6,000 square feet and in 1984,
+                the Honest Ed's annex building was completed expanding the store east to Bathurst Street.
+
+                The main building was at 581 Bloor Street West and the annex at 760 Bloor Street West with the two connected by a walkway crossing Honest Ed Alley.
+                Honest Ed's gained fame for its marketing stunts, including loss leader specials. By 1968 the store was grossing $14 million annually. Mirvish's turkey giveaway
+                before Christmas each year always received media attention; this annual event continued even after his death, until the Christmas season of 2015. Mirvish also
+                threw birthday parties for himself from 1988 until his death, continued since then as anniversary parties for the store itself. At the street parties, there were
+                free cakes, meals, hot dogs, candy, and giveaways. Crowds of Torontonians turned up with their children, and stood in long lines to receive these handouts.
+                The event was accompanied by live bands and balloons.
+        </h4>
+    </div>
+
+    <div style="clear: both;"></div>
+
+
+    <div class="culture-section">
+        <img id="culture-image" src="images/Scott-pilgrim.jpg" alt="comic page from Scott Pilgrim involving Honest Eds">
         <h3 class="title-text">Cultural Impact</h3>
-            <h4 class="body-text">Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+        <h4 class="body-text">The store has appeared in several films and television shows shot in Toronto. For example, Honest Ed's was featured in the film The Long Kiss Goodnight,
+                and can be seen in several background scenes in the film Scott Pilgrim vs. the World when Scott and his friends are dining at Pizza Pizza across the street from the store.
 
-        <img id="sign-image" src="images/honest-eds-signs.jpg" alt:"some of the famous hand written signs inside the store">
+                One of the fight sequences in the third volume of Bryan Lee O'Malley's Scott Pilgrim comic book series takes place at Honest Ed's, with the characters suffering sensory
+                overload due to the incredible amounts of merchandise. The store implodes after Scott's rival Todd breaks an agreement not to use his psychic powers.
+            </h4>
+    </div>
+
+    <div style="clear: both;"></div>
+
+    <div class="sign-section">
+        <img id="sign-image" src="images/honest-eds-signs.jpg" alt="some of the famous hand written signs inside the store">
         <h3 class="title-text">The Sign</h3>
-            <h4>Lorem ipsum dolor sit amet,
+        <h4 class="body-text">Lorem ipsum dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+    </div>
 
+    <div style="clear: both;"></div>
 
-        <h3 class="title-text">Learn More</h3>
-            <h4 class="body-text">Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h4>
+    <h3 id="learn-more-text" class="title-text">Learn More</h3>
+    <h4 class="body-text">
+            <ul class="list-style">
+            <li><a href="https://en.wikipedia.org/wiki/Honest_Ed%27s"  target="_blank">Wikipedia Article</a> - Where the text for this webpage came from.</li>
+            <li><a href="http://mirvish-village.com/"  target="_blank">Mirvish Village</a> - New development on the site of the original Honest Ed's</li>
+            <li><a href="https://www.thestar.com/news/canada/2017/05/23/honest-eds-famous-sign-gives-its-final-farewell-keenan.html"  target="_blank">Toronto Star</a> - Article regarding the demolition of the famous Honest Ed's sign.</li>
+        </ul>
+        </h4>
+<script src="myscripts.js"></script>
+</body>
 
-    </body>
 </html>

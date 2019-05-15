@@ -1,33 +1,343 @@
 
+/* List of Colours used in the page:
+#3E0E07;
+#fff;
+#11141B;
+#e2b66f;
+#8A1F10;
+*/
+
+:root {
+    --dark-red: #3E0E07;
+}
+
+/*Overall properties of the whole page */
 * {
     margin: 0;
     padding 0;
     box-sizing: border-box;
 }
 
-.title-text {Font-Family: 'Ovo', Serif;
-Font-Size: 42px;}
-
-.body-text {Font-Family: 'Quattrocento Sans', Sans-Serif;
-Font-Size: 17px;}
-
-.menu-text {font-family: 'ovo', Serif;
-font-size: 17px;}
-
-.menu-container {
-    color: #fff;
-    background-color: #3E0E07;
-    padding: 20px 0;
-    border-color: #fff;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+body {
+        background-color: var(--dark-red);
 }
 
-.menu {
+/* Link Properties */
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color:#e2b66f;
+    text-decoration: underline;
+}
+
+a:visited {
+    color:#e2b66f;
+    text-decoration: none;
+}
+
+/* Text Properties */
+.title-text {Font-Family: 'Ovo', Serif;
+Font-Size: 3rem;
+color:#e2b66f;}
+
+.body-text {Font-Family: 'Quattrocento Sans', Sans-Serif;
+Font-Size: 1.1rem;
 display: flex;
-flex-grow: 1;
-flex-shrink: 1;
-flex-basis: 1;
-flex
+color:#ffffff;
+line-height: 1.8rem;
+ }
+
+.menu-text {font-family: 'ovo', Serif;
+font-size: 1.25rem;
+background-color: #11141B;
+transition: all 1s ease-out;
+}
+
+.show-menu {
+    color: #ffffff;
+    text-decoration: none;
+    display: none;
+}
+
+.show-menu:hover {
+    color:#e2b66f;
+    text-decoration: underline;
+}
+
+.hide-menu {
+    color: #ffffff;
+    text-decoration: none;
+    display: none;
+}
+
+.hide-menu:hover {
+    color:#e2b66f;
+    text-decoration: underline;
+}
+
+
+/* Parent of menu items */
+.menu-container {
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #11141B;
+}
+
+
+/* Margins for each section of the text and images*/
+.title-text {Font-Family: 'Ovo', Serif;
+Font-Size: 2rem;
+color:#e2b66f;
+}
+
+.body-text {Font-Family: 'Quattrocento Sans', Sans-Serif;
+Font-Size: 0.9rem;
+display: flex;
+color:#ffffff;
+line-height: 1.8rem;
+margin-left: 0.5rem;
+margin-right: 0.5rem;
+ }
+
+.history-section {
+    margin: 5rem 1.8rem 0 0;
+}
+
+.culture-section {
+    margin: 5rem 0 0 1.8rem;
+}
+
+.list-style {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 1rem 5rem 0rem;
+    font-size: 1.3em;
+}
+
+.sign-section {
+    margin: 5rem 1.8rem 0 0;
+}
+
+.down-arrow {
+display: block;
+text-align: center;
+margin-top: -25rem;
+font-size: 10rem;
+color:#e2b66f;
+text-shadow:
+-3px -3px 5px #11141B,
+3px -3px 5px #11141B,
+-3px 3px 5px #11141B,
+3px 3px 5px #11141B;
+}
+
+.main-title {
+    font-family: 'Ewert', cursive;
+    text-align: center;
+    font-size: 6rem;
+    color:#e2b66f;
+    text-shadow:
+    -3px -3px 0 #11141B,
+    3px -3px 0 #11141B,
+    -3px 3px 0 #11141B,
+    3px 3px 0 #11141B;
+}
+
+.sub-title {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#title-image {
+    max-height: auto;
+    min-width: 100%;
+}
+
+#history-image {
+    min-width: 40%;
+    max-width: 40%;
+    max-height: auto;
+    float: left;
+    margin-right: 1.8rem;
+    padding: 1px;
+    border: 1px solid #11141B;
+    background-color: #ffffff;
+}
+
+#culture-image{
+    max-width: 40%;
+    max-height: auto;
+    float: right;
+    margin-left: 1.8rem;
+    padding: 1px;
+    border: 1px solid #11141B;
+    background-color: #ffffff;
+}
+
+#sign-image{
+    max-width: 40%;
+    min-width: 40%;
+    max-height: auto;
+    float: left;
+    margin-right: 1.8rem;
+    padding: 1px;
+    border: 1px solid #11141B;
+    background-color: #ffffff;
+}
+
+#learn-more-text{
+    margin: 5rem 0 0 0;
+    text-align: center;
+}
+
+/*------------------- Media Queries--------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+
+    .main-title {
+        font-family: 'Ewert', cursive;
+        text-align: center;
+        font-size: 3rem;
+        color:#e2b66f;
+        text-shadow:
+        -3px -3px 0 #11141B,
+        3px -3px 0 #11141B,
+        -3px 3px 0 #11141B,
+        3px 3px 0 #11141B;
+    }
+
+    .title-text {Font-Family: 'Ovo', Serif;
+    Font-Size: 1.5rem;
+    color:#e2b66f;
+    text-align: center;
+    }
+
+    .sub-title {
+        margin-top: 10rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-align: center;
+    }
+
+    .down-arrow {
+    display: block;
+    text-align: center;
+    margin-top: -2rem;
+    font-size: 3rem;
+    color:#e2b66f;
+    text-shadow:
+    -3px -3px 5px #11141B,
+    3px -3px 5px #11141B,
+    -3px 3px 5px #11141B,
+    3px 3px 5px #11141B;
+    }
+
+    .history-section {
+        min-width: 100%;
+        max-height: auto;
+        margin: 3rem 0rem 0 0;
+    }
+
+    .culture-section {
+        min-width: 100%;
+        max-height: auto;
+        margin: 3rem 0rem 0 0
+    }
+
+    .sign-section {
+        min-width: 100%;
+        max-height: auto;
+        margin: 3rem 0rem 0 0
+    }
+
+    .menu-container{
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        background-color: #11141B;
+    }
+
+    .list-style {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0rem 0rem 3rem 0rem;
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    .sub-title {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .menu-text {
+        display: none;
+    }
+
+    .show-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hide-menu {
+        cursor: pointer;
+    }
+
+    .menu-container.open .show-menu {
+        display: none;
+    }
+
+    .menu-container.open .hide-menu,
+    .menu-container.open .menu-text {
+        display: block;
+    }
+
+    #title-image {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    #history-image {
+        max-height: auto;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #culture-image{
+        max-height: auto;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #sign-image{
+        max-height: auto;
+        min-width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #learn-more-text{
+        margin: 5rem 0 0 0;
+        text-align: center;
+    }
 }
